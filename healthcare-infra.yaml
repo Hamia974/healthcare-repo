@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Healthcare Branch Infrastructure
+
+Resources:
+  HealthcareEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-07ff62358b87c7116
+      SubnetId: subnet-05d5081403866d74f
+      SecurityGroupIds:
+        - sg-0e0eaf2e0fd305d9b
